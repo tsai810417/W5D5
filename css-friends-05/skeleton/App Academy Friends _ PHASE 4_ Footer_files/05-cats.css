@@ -2,41 +2,31 @@
 .content-header {
   height: 200px;
   width: 900px;
-  display: block;
+  display: flex;
   background-image: url("http://appacademy.github.io/css-friends/shared/img/cats.jpg");
-
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-size: cover;
-
-  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
 }
 
 .content-header h1 {
   color: white;
-  font-size: 40px;
-  left: 240px;
-  text-shadow: #000 0 0 10px;
-
+  font-size: 30px;
+  position: relative;
+  bottom: 10px;
   /* align-items: baseline; */
 }
 
 .content-header h1, button {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: 10px;
 }
 
 .content-header-add-friend {
-  background-color: white;
+  background-color: #ccc;
   border-radius: 5px;
   border: 1px solid black;
-  width: 150px;
-  text-align: center;
-  font-weight: bold;
-  height: 30px;
-  right: 20px;
-}
-
-.content-header-add-friend:hover {
-  background-color: #ccc;
-  cursor: pointer;
 }
